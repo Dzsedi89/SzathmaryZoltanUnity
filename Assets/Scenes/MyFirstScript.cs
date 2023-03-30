@@ -42,5 +42,7 @@ public class MyFirstScript : MonoBehaviour
         int v7 = x + y * z; // van műveleti sorrend, előbb szoroz, aztán hozzáad x-et, 20
         int v8 = (x + y) * z; // zárójelez, betartja, 24
         int v9 = x + (y * z); 
+
+        // -------------------------------2023.03.30. //
     }
 }
