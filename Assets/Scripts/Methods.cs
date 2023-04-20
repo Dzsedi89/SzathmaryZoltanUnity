@@ -104,6 +104,39 @@ class Methods : MonoBehaviour
             }
         }
     }
+
+    //max és minimum keresõ függvény//
+
+    float Min(float a, float b)
+    {
+        //if (a < b)
+        //{
+        //    return a;
+        //}
+        //else
+        //{
+        //    return b;
+        //}
+
+        //ez ugyanaz://
+        return a < b ? a: b;
+    }
+
+    float Max(float a, float b)
+    {
+        //if (a > b)
+        //{
+        //    return a;
+        //}
+        //else
+        //{
+        //    return b;
+        //}
+
+        //ez ugyanaz
+        return a > b ? a : b;
+    }
 }
+
 
 //a kódismétlés elkerülése a metódusok feladata, de arra is jó, hogy egy metódust egybõl tudunk paraméterezni.
