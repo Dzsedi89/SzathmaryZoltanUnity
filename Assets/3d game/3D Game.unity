@@ -299,6 +299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175346341}
   - component: {fileID: 175346342}
+  - component: {fileID: 175346343}
   m_Layer: 0
   m_Name: Saw
   m_TagString: Untagged
@@ -337,6 +338,20 @@ MonoBehaviour:
   angularSpeed: 360
   space: 1
   axis: {x: 0, y: 1, z: 0}
+--- !u!114 &175346343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175346340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f68244532023594082081116e7d8ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4.5
+  target: {fileID: 1836716959}
 --- !u!1 &312773724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,14 +1703,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697422981}
-  m_LocalRotation: {x: 0.3743843, y: -0.011404905, z: -0.0046051047, w: 0.9271921}
+  m_LocalRotation: {x: 0.39582235, y: -0.0014733121, z: -0.008239367, w: 0.918289}
   m_LocalPosition: {x: 0.02, y: 14.42, z: -8.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 43.959, y: -1.958, z: -1.36}
+  m_LocalEulerAnglesHint: {x: 46.63, y: -0.77, z: -1.36}
 --- !u!114 &1697422985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1709,7 +1724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1600387319}
-  targetOffset: {x: 0, y: 2, z: 0}
+  targetOffset: {x: 0, y: 0, z: 0}
   enableVerticalTurn: 0
 --- !u!1 &1764768461
 GameObject:
