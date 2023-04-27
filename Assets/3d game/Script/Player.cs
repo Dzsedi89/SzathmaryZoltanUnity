@@ -4,6 +4,7 @@ class Player : MonoBehaviour
 {
     [SerializeField] float speed = 1f;
     [SerializeField] float angularSpeed = 180;
+    [SerializeField] Transform cameraTransform;
 
     void Start() { }
 
@@ -59,7 +60,17 @@ class Player : MonoBehaviour
             z -= 1;
         }
 
-        Vector3 d = new Vector3(x, 0, z);
+        Vector3 cameraRight = cameraTransform.right;
+        Vector3 cameraForward = cameraTransform.forward;
+
+
+        //Vector3 d = new Vector3(x, 0, z); GLOBÁLIS TÉRBEN
+
+        //LOKÁLIS TÉRBEN A KAMERÁHOZ
+        
+        Vector3 d = x * cameraRight + z* cameraForward;
+        d.y = 0;
+
         d.Normalize();
         return d;
     }
