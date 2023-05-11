@@ -1,48 +1,58 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-public class MyFirstScript : MonoBehaviour
+class MyFirstScript : MonoBehaviour
 {
     void Start()
     {
-        Debug.Log("Hello " + name); //Kiírja a a Hello és a GameObject nevét
-        Debug.Log("Hello Zoli!"); /* Kiírja a debug consoleba, hogy Hello Zoli! */
+        Debug.Log("Hello, " + name);   // Ki�rat�s
+        Debug.Log("I'm Csabi");        /* Ki�rat�s */
 
         int a;
-
         a = 10;
         a = 20;
 
         Debug.Log(a);
 
-        int age = 33;
+        int age = 31;
         Debug.Log(age);
 
         int x = 2, y = 3, z = 4;
 
-        int v1 = x + y; // összeadja x-yt, 5
-        int v2 = x - z; // kivon, -2
-        int v3 = v1 * v2;   //szoroz, -10
-        int v4 = y / x; // oszt, de csak egészt ad meg, ergo lecsapja a végét, tehát 1.5 helyett 1. Nem az INT típus adja meg, hanem az, hogy két intel csinálom a műveletet.
+        int v1 = x + y;    // 5
+        int v2 = x - z;    // -2
+        int v3 = v1 * v2;  // -10
+        int v4 = y / x;    // 1
 
-        int v5 = 15 % 4; //3 (15ben a négy az 3szor megvan, maradék a 3)
-        int v6 = -v5; //-3
+        int v5 = 15 % 4;    // 3
+        int v6 = -v5;       // -3
 
-        v6 = v6 + 5; // v6 += 5;
+        // ---------------
+
+        v6 = v6 + 5;
         v6 = x - v6;
 
-        x++; //x += 1;    x = x+1;
-        x--; //x -= 1;    x = x-1;
 
-        // ------------------------------------------- //
+        x += 5;   // x = x + 5;
+        x -= 5;   // x = x - 5;
+        x *= 5;   // x = x * 5;
+        x /= 5;   // x = x / 5;
+        x %= 5;   // x = x % 5;
+
+
+        x++;      // x += 1;     x = x+1; 
+        x--;      // x = x - 1;
+
+        // -----------------------------------
 
         x = 2;
         y = 6;
         z = 3;
 
-        int v7 = x + y * z; // van műveleti sorrend, előbb szoroz, aztán hozzáad x-et, 20
-        int v8 = (x + y) * z; // zárójelez, betartja, 24
-        int v9 = x + (y * z); 
+        int v7 = x + y * z;      // 20
+        int v8 = (x + y) * z;    // 24 
+        int v9 = x + (y * z);    // 20
 
-        // -------------------------------2023.03.30. //
+        // -------------------------------------
+
     }
 }

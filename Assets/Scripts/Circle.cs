@@ -1,18 +1,19 @@
 using UnityEngine;
 
-public class Circle : MonoBehaviour
+class Circle : MonoBehaviour
 {
-
     [SerializeField] float radius = 1;
 
     [SerializeField] float circumferance;
     [SerializeField] float area;
 
-    void OnValidate() //buildben, játékban, sosem fog lefutni, ez a fejlesztõnek segít, mindig lefut, nem csak objekt kreáláskor
+    void OnValidate()
     {
-        circumferance = 2 * radius * 3.14f;  //kör kerület btw. Mathf.PI az 3.14 magában is
-        area = radius * radius * 3.14f;      //kör terület
+        // float pi = 3.144235346565747354555f;
 
-        // Debug.Log($"Ker: {circumferance}, Ter: {area}"); kiírja a kerületet és területet
+        circumferance = 2 * radius * Mathf.PI;   // Kerület
+        area = radius * radius * Mathf.PI;       // Terület
+
+        // Debug.Log($"Ker: {circumferance},    Ter: {area}");
     }
 }
