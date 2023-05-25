@@ -42,7 +42,7 @@ public class LongPathMover : MonoBehaviour
     {
         if (lineRenderer == null)
             return;
-
+                
         lineRenderer.positionCount = points.Length;
         lineRenderer.SetPositions(points);
     }
@@ -50,7 +50,7 @@ public class LongPathMover : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = Color.white;
-        foreach (var point in points)
+        foreach (var point in points) 
         {
             Gizmos.DrawSphere(point, 0.2f);
         }
@@ -65,4 +65,3 @@ public class LongPathMover : MonoBehaviour
 
     }
 }
-

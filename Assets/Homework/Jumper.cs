@@ -15,7 +15,7 @@ class Jumper : MonoBehaviour
     {
         Vector3 input = GetInputDirection();
 
-        if (input != Vector3.zero)
+        if(input != Vector3.zero)
             targetPos += input;
 
         transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
